@@ -18,7 +18,9 @@ export async function getSuperuserToken() {
     if (superuserTokenPromise) return superuserTokenPromise;
     superuserTokenPromise = (async () => {
         try {
-            const authData = await pb.admins.authWithPassword('ealbinu@gmail.com', '1906.Panza');
+            const adminEmail = import.meta.env.VITE_PB_ADMIN_EMAIL;
+            const adminPassword = import.meta.env.VITE_PB_ADMIN_PASSWORD;
+            const authData = await pb.admins.authWithPassword(adminEmail, adminPassword);
             superuserToken.value = authData.token;
             return superuserToken.value;
         } catch (error) {
