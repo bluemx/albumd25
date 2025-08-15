@@ -67,7 +67,8 @@ async function getCards() {
             ...card,
             imageUrl: pbapi+'/api/files/'+card.collectionId+'/'+card.id+'/'+card.front,
             animadoUrl: (card.animado ? (pbapi+'/api/files/'+card.collectionId+'/'+card.id+'/'+card.animado) : null),
-            vintageUrl: (card.vintage ? (pbapi+'/api/files/'+card.collectionId+'/'+card.id+'/'+card.vintage) : null)
+            vintageUrl: (card.vintage ? (pbapi+'/api/files/'+card.collectionId+'/'+card.id+'/'+card.vintage) : null),
+            fanaticoUrl: (card.fanatico ? (pbapi+'/api/files/'+card.collectionId+'/'+card.id+'/'+card.fanatico) : null)
         };
     });
 }

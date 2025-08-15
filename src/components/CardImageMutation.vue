@@ -4,6 +4,9 @@
     <div v-if="effect === 'Vintage'" class="vintage-effect">
       <img :src="card.vintageUrl" alt="vintage effect" class="w-full h-full object-cover rounded-lg shadow-lg" />
     </div>
+    <div v-if="effect === 'Fanatico'" class="w-full h-full">
+      <img :src="card.fanaticoUrl" alt="Fanatico" class="w-full h-full object-cover rounded-lg shadow-lg" />
+    </div>
     <div v-if="effect === 'Animado'" class="w-full h-full">
       <video autoplay loop muted  webkit-playsinline playsinline class="w-full h-full object-cover rounded-lg shadow-lg">
         <source :src="card.animadoUrl" type="video/mp4"></source>
