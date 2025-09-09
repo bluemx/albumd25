@@ -10,6 +10,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     Book: typeof import('./components/Book.vue')['default']
     Card: typeof import('./components/Card.vue')['default']
+    CardImageEffect: typeof import('./components/CardImageEffect.vue')['default']
     CardImageMutation: typeof import('./components/CardImageMutation.vue')['default']
     CardPopup: typeof import('./components/CardPopup.vue')['default']
     ChallengesList: typeof import('./components/ChallengesList.vue')['default']
@@ -17,6 +18,7 @@ declare module 'vue' {
     MisRepetidasDrawer: typeof import('./components/MisRepetidasDrawer.vue')['default']
     Page: typeof import('./components/Page.vue')['default']
     StatsCardCounter: typeof import('./components/StatsCardCounter.vue')['default']
+    SwaggerPage: typeof import('./components/SwaggerPage.vue')['default']
     Tokens: typeof import('./components/Tokens.vue')['default']
     TokensCounter: typeof import('./components/TokensCounter.vue')['default']
   }
