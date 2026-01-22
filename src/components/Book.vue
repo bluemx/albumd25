@@ -145,7 +145,6 @@ function goToPageFromHash() {
     if(pageFlipInstance) {
         goToPageFromHashUtil(pageFlipInstance);
     }
-
 }
 
 async function startFlip() {

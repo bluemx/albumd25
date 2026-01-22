@@ -7,6 +7,38 @@ const pbapi = 'https://albumdigital.up.railway.app';
 
 const pb = new PocketBase(pbapi);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+
+
+
 const superuserToken = ref(null);
 let superuserTokenPromise = null;
 
